@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Resume Builder for Students and Freshers</title>
+
+<meta name="google-site-verification" content="PaMFZn5Z19yzOq1A1jOe5ckLCAqPzfTqLZsKqR8_kys" />
+
+<meta name="keywords" content="resume builder, free resume maker, online resume generator, student resume tool, CV builder">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+
+<h1>Resume Builder</h1>
+
+<div class="container">
+
+    <div class="form-box">
+
+        <input type="file" id="photo" accept="image/*">
+
+        <input type="text" id="name" placeholder="Full Name">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="linkedin" placeholder="LinkedIn Profile Link">
+
+        <input type="text" id="github" placeholder="GitHub Profile Link">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <textarea id="education" placeholder="Education"></textarea>
+
+        <textarea id="skills" placeholder="Skills"></textarea>
+
+        <textarea id="certifications" placeholder="Certifications"></textarea>
+
+        <textarea id="projects" placeholder="Projects"></textarea>
+
+        <label>Select Resume Template</label>
+
+        <select id="template">
+            <option value="professional">Professional</option>
+            <option value="modern">Modern</option>
+            <option value="ats">ATS Friendly</option>
+            <option value="developer">Developer</option>
+        </select>
+
+        <button onclick="generateResume()">
+            Generate Resume
+        </button>
+
+        <button onclick="downloadPDF()">
+            Download PDF
+        </button>
+
+    </div>
+
+    <div class="resume-box professional" id="resume">
+
+        <div class="photo-container">
+            <img id="rphoto" src="" alt="Profile Photo">
+        </div>
+
+        <h2 id="rname">Your Name</h2>
+
+        <p id="remail">Email</p>
+
+        <p id="rphone">Phone Number</p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a id="rlinkedin" href="https://www.linkedin.com/in/manipriya-peddi-94904b286" target="_blank">Profile</a>
+        </p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a id="rgithub" href="https://github.com/Manipriyapeddi" target="_blank">Profile</a>
+        </p>
+
+        <hr>
+
+        <h3>Education</h3>
+        <p id="reducation"></p>
+
+        <h3>Skills</h3>
+        <p id="rskills"></p>
+
+        <h3>Certifications</h3>
+        <p id="rcertifications"></p>
+
+        <h3>Projects</h3>
+        <p id="rprojects"></p>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Developed by Manipriya Peddi</p>
+
+    <a href="https://www.linkedin.com/in/manipriya-peddi-94904b286" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/Manipriyapeddi" target="_blank">GitHub</a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
